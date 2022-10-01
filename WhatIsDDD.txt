@@ -1,0 +1,45 @@
+-	Blank Solution
+-	Source için "src" klasörü oluşturulur.
+-	src> Add new project > Class Library > 
+	-	Order.Domain
+-	src> Add new project > Class Library > 
+	- Order.Application
+-	src> Add new project > Class Library >
+	- Order.Infrastructure
+-	src> Add new project > Asp.Net Web Core >
+	- Order.WebApi
+-	Order.WebApi > Set as Default Project
+-	Order.Domain > Add new folder > SeedWork
+-	Order.Domain>SeedWork > BaseEntity.cs
+- 	Order.Domain>SeedWork > ValueObject.cs
+-	Order.Domain>SeedWork > IAggeraRoot.cs
+-	Order.Domain>SeedWork> IRepository.cs
+-	Order.Domain>SeedWork > IUnitOfWork.cs
+-	Order.Domain> New folder > AggregateModels
+-	Order.Domain>AggregateModels > OrderModels(f)
+-	Order.Domain>AggregateModels>OrderModels >
+	- Add new Class > Adress.cs
+-	Order.Domain/AggregateModels/OrderModels >
+	- Add new Class > OrderItems.cs
+- 	Order.Domain > Add new folder > Buyer
+-	Order.Domain/Buyer > Buyer.cs
+-	Order.Application> Repository(f)
+-	Order.Application/Repository> Add new Interface
+	- IOrderRepository.cs
+-	Order.Application> Add new referance >Order.Domain
+-	Order.Infrastructure>Add new folder>Repository
+-	Order.Infrastructure/Repository>Add new Class
+	- OrderRepository.cs
+-	Order.Infrastructure> Add new referance >
+	- Order.Application
+-	Order.Application/Repository > Add new Interface
+	- IBuyerRepository.cs
+-	Order.Infrastructure/Repository > Add new class
+	- BuyerRepository.cs
+-	Order.Domain>Add new folder > Events
+-	Order.Domain/Events > Add new class
+	- OrderStartedDomainEvent.cs
+-	Order.Domain > Add new nuget > MediatR
+-	Order.Application>Add new fldr>DomainEventHandlers
+-	Order.Application/DomainEventHandlers>Add NewClass 
+	- OrderStartedDomainEventHandler.cs
