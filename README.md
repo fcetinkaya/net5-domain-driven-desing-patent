@@ -13,7 +13,7 @@ In this project, I write both theoretical and practical details about Domain-Dri
 
 
 ## Screenshots
-![Example screenshot](screenshot.jpg)
+![Example screenshot](screenshort.jpg)
 
 
 ## Projects
